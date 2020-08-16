@@ -1,5 +1,9 @@
 import hello from '../demo'
 
-test('基础测试', () => {
-  expect(hello).toBe('hello jest')
+describe('Demo API:', () => {
+  describe('#demo', () => {
+    it(`hello === hello jest`, () => {
+      expect(hello).toBe('hello jest')
+    })
+  })
 })
