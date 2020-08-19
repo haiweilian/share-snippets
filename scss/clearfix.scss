@@ -1,0 +1,9 @@
+// == https://v4.bootcss.com/docs/utilities/clearfix/
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

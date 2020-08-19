@@ -1,0 +1,9 @@
+// == https://v4.bootcss.com/docs/utilities/display/
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+
+@each $value in $displays {
+  .d-#{$value} {
+    display: $value !important;
+  }
+}

@@ -1,0 +1,9 @@
+// == https://v4.bootcss.com/docs/utilities/float/
+
+$floats: left, right, none !default;
+
+@each $value in $floats {
+  .float-#{$value} {
+    float: $value !important;
+  }
+}
