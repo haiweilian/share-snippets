@@ -1,0 +1,83 @@
+// == Bootstrap columns 12 to 24 、row-columns 6 to 12
+
+$grid-columns: 24 !default;
+$grid-row-columns: 12 !default;
+
+// == https://v4.bootcss.com/docs/layout/grid/#row-columns
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through $grid-row-columns {
+  .row-cols-#{$i} {
+    & > * {
+      flex: 0 0 100% / $i;
+      max-width: 100% / $i;
+    }
+  }
+}
+
+// == common properties for all breakpoints
+// == https://v4.bootcss.com/docs/layout/grid/#auto-layout-columns
+
+%grid-column {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.col,
+.col-auto {
+  @extend %grid-column;
+}
+
+[class*="col-"] {
+  @extend %grid-column;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+@for $i from 0 through $grid-columns {
+  .col-#{$i} {
+    flex: 0 0 percentage($i / $grid-columns);
+    max-width: percentage($i / $grid-columns);
+  }
+}
+
+// == https://v4.bootcss.com/docs/layout/grid/#order-classes
+
+.order-first {
+  order: -1;
+}
+
+.order-last {
+  order: $grid-columns + 1;
+}
+
+@for $i from 0 through $grid-columns {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+
+// == https://v4.bootcss.com/docs/layout/grid/#offsetting-columns
+
+@for $i from 0 through $grid-columns {
+  $num: $i / $grid-columns;
+  .offset-#{$i} {
+    margin-left: if($num == 0, 0, percentage($num));
+  }
+}

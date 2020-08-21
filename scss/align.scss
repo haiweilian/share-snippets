@@ -1,0 +1,7 @@
+// == https://v4.bootcss.com/docs/utilities/vertical-align/
+
+$vertical-aligns: baseline, top, middle, bottom, text-bottom, text-top !default;
+
+@each $value in $vertical-aligns {
+  .align-#{$value} { vertical-align: $value !important; }
+}

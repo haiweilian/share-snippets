@@ -1,0 +1,41 @@
+$grid-columns: 24 !default;
+
+// == https://github.com/ElementUI/theme-chalk/blob/v2.13.2/src/row.scss
+
+.row {
+  position: relative;
+  box-sizing: border-box;
+
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+// == https://github.com/ElementUI/theme-chalk/blob/v2.13.2/src/col.scss
+
+[class*="col-"] {
+  box-sizing: border-box;
+  float: left;
+}
+
+@for $i from 0 through $grid-columns {
+  .col-#{$i} {
+    width: (1 / $grid-columns * $i * 100) * 1%;
+  }
+
+  .col-offset-#{$i} {
+    margin-left: (1 / $grid-columns * $i * 100) * 1%;
+  }
+
+  .col-pull-#{$i} {
+    position: relative;
+    right: (1 / $grid-columns * $i * 100) * 1%;
+  }
+
+  .col-push-#{$i} {
+    position: relative;
+    left: (1 / $grid-columns * $i * 100) * 1%;
+  }
+}

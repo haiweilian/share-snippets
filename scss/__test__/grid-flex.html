@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-flex</title>
+    <link rel="stylesheet" href="./grid-flex.css" />
+    <style>
+      .bg-purple-dark {
+        background: #99a9bf;
+      }
+
+      .bg-purple {
+        background: #d3dce6;
+      }
+
+      .bg-purple-light {
+        background: #e5e9f2;
+      }
+
+      .grid-content {
+        min-height: 36px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="source">
+      <div>
+        <div class="row">
+          <div class="col-24">
+            <div class="grid-content bg-purple-dark"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-12">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-8">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+          <div class="col-8">
+            <div class="grid-content bg-purple"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-6">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+          <div class="col-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-6">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-4">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+          <div class="col-4">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-4">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+          <div class="col-4">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-4">
+            <div class="grid-content bg-purple-light"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="source">
+      <div>
+        <div class="row">
+          <div class="col-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-6 offset-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+          <div class="col-6 offset-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 offset-6">
+            <div class="grid-content bg-purple"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

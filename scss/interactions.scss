@@ -1,0 +1,7 @@
+// == https://v4.bootcss.com/docs/utilities/interactions/
+
+$user-selects: all, auto, none !default;
+
+@each $value in $user-selects {
+  .user-select-#{$value} { user-select: $value !important; }
+}
