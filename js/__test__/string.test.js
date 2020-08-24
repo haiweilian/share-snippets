@@ -7,6 +7,7 @@ describe('String API:', () => {
     it(`trim(';;;aaaa;;;', ';')`, () => {
       expect(trim(';;;aaaa;;;', ';')).toBe('aaaa')
     })
+
     it(`trim(',,,aaaa,,,')`, () => {
       expect(trim(',,,aaaa,,,')).toBe('aaaa')
     })
@@ -23,8 +24,8 @@ describe('String API:', () => {
       expect(truncate('abcdefghigklmnopqr')).toBe('abcdefghig...')
     })
 
-    it(`truncate('abcdefghigklmnopqr', 10)`, () => {
-      expect(truncate('abcdefghigklmnopqr', 10)).toBe('abcdefghig...')
+    it(`truncate('abcdefghigklmnopqr', 50)`, () => {
+      expect(truncate('abcdefghigklmnopqr', 50)).toBe('abcdefghigklmnopqr')
     })
   })
 })
