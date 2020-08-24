@@ -3,6 +3,8 @@
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "plugins": ["jest"],
   "env": {
+    "node": true,
+    "browser": true,
     "jest/globals": true
   }
 }
