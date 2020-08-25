@@ -1,6 +1,7 @@
 import random from '../number/random'
 import digitUppercase from '../number/digitUppercase'
 import toFixed from '../number/toFixed'
+import bytes from '../number/bytes'
 
 expect.extend({
   toBeWithinRange(received, floor, ceiling) {
@@ -46,6 +47,32 @@ describe('Number API:', () => {
 
     it(`toFixed(1.335, 2)`, () => {
       expect(toFixed(1.335, 2)).toBe('1.34')
+    })
+  })
+
+  describe('#bytes()', () => {
+    it(`bytes(1)`, () => {
+      expect(bytes(1)).toBe('1 byte')
+    })
+
+    it(`bytes(8)`, () => {
+      expect(bytes(8)).toBe('8 bytes')
+    })
+
+    it(`bytes(1024)`, () => {
+      expect(bytes(1024)).toBe('1.00 kB')
+    })
+
+    it(`bytes(2000000)`, () => {
+      expect(bytes(2000000)).toBe('1.91 MB')
+    })
+
+    it(`bytes(2000000000)`, () => {
+      expect(bytes(2000000000)).toBe('1.86 GB')
+    })
+
+    it(`bytes(2000000000000)`, () => {
+      expect(bytes(2000000000000)).toBe('1.82 TB')
     })
   })
 })
