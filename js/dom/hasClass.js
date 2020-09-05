@@ -4,7 +4,7 @@
  * @param  {String} cls
  * @return {Boolean}
  */
-function hasClass(ele, cls) {
+const hasClass = (ele, cls) => {
   return new RegExp(`(\\s|^)${cls}(\\s|$)`).test(ele.className)
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "share-snippets",
-  "version": "0.0.1",
-  "description": "收集了一些平时常用以及网上寻觅的代码片段。",
+  "version": "1.0.0",
+  "description": "A collection of code snippets that are commonly used and found on the Web",
   "main": "index.js",
   "scripts": {
     "test": "jest",

@@ -4,7 +4,7 @@
  * @param {String} datefmt 传入的自定义时间
  * @param {String} fmt     格式化的格式
  */
-const format = (datefmt, fmt) => {
+const formatDate = (datefmt, fmt) => {
   const date = datefmt ? new Date(datefmt) : new Date()
   const o = {
     'M+': date.getMonth() + 1, // 月份
@@ -26,4 +26,4 @@ const format = (datefmt, fmt) => {
   return fmt
 }
 
-export default format
+export default formatDate
