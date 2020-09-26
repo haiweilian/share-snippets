@@ -4,17 +4,19 @@
  * @return {Object}
  */
 const offset = (ele) => {
-  let offsetL = ele.offsetLeft
-  let offsetT = ele.offsetTop
-  let offsetP = ele.offsetParent
-  while (offsetP) {
-    offsetL += offsetP.offsetLeft
-    offsetT += offsetP.offsetTop
-    offsetP = offsetP.offsetParent
+  let top = ele.offsetTop
+  let left = ele.offsetLeft
+  let parent = ele.offsetParent
+
+  while (parent) {
+    top += parent.offsetTop
+    left += parent.offsetLeft
+    parent = parent.offsetParent
   }
+
   return {
-    left: offsetL,
-    top: offsetT,
+    top,
+    left,
   }
 }
 
