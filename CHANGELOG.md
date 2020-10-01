@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/haiweilian/share-snippets/compare/v1.1.0...v1.2.0) (2020-10-01)
+
+
+### Features
+
+* **add randomstring ; rename getmonthdays、queryparse、querystringfy:** js ([b1e0d5f](https://github.com/haiweilian/share-snippets/commit/b1e0d5f832a58e31717675d2ba6c9a0955255865))
+
 ## 1.1.0 (2020-09-26)
 
 
