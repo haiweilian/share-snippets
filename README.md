@@ -22,6 +22,6 @@ new scss file.
 
 ```scss
 // util.scss
-@import './flex.scss';
-@import './grid-flex.scss';
+@import 'share-snippets/scss/flex.scss';
+@import 'share-snippets/scss/grid-flex.scss';
 ```
