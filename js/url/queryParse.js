@@ -1,10 +1,10 @@
 /* eslint-disable no-param-reassign, no-plusplus */
 /**
- * url参数转对象
+ * 序列化字符串转对象
  * @param  {String} url  default: window.location.href
  * @return {Object}
  */
-const parseQueryString = (url) => {
+const queryParse = (url) => {
   url = !url ? window.location.href : url
   if (url.indexOf('?') === -1) {
     return {}
@@ -22,4 +22,4 @@ const parseQueryString = (url) => {
   return query
 }
 
-export default parseQueryString
+export default queryParse

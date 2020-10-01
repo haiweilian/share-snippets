@@ -1,5 +1,5 @@
 import formatDate from '../date/formatDate'
-import monthDays from '../date/monthDays'
+import getMonthDays from '../date/getMonthDays'
 
 describe('Date API:', () => {
   describe('#formatDate()', () => {
@@ -12,17 +12,17 @@ describe('Date API:', () => {
     })
   })
 
-  describe('#monthDays()', () => {
-    it(`monthDays('2020-02')`, () => {
-      expect(monthDays('2020-02')).toBe(29)
+  describe('#getMonthDays()', () => {
+    it(`getMonthDays('2020-02')`, () => {
+      expect(getMonthDays('2020-02')).toBe(29)
     })
 
-    it(`monthDays('2020-09')`, () => {
-      expect(monthDays('2020-09')).toBe(30)
+    it(`getMonthDays('2020-09')`, () => {
+      expect(getMonthDays('2020-09')).toBe(30)
     })
 
-    it(`monthDays('2020-08')`, () => {
-      expect(monthDays('2020-08')).toBe(31)
+    it(`getMonthDays('2020-08')`, () => {
+      expect(getMonthDays('2020-08')).toBe(31)
     })
   })
 })

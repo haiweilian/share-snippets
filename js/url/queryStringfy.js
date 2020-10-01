@@ -4,7 +4,7 @@
  * @param  {Object} obj
  * @return {String}
  */
-const stringfyQueryString = (obj) => {
+const queryStringfy = (obj) => {
   if (!obj) return ''
   const pairs = []
 
@@ -24,4 +24,4 @@ const stringfyQueryString = (obj) => {
   return pairs.join('&')
 }
 
-export default stringfyQueryString
+export default queryStringfy
