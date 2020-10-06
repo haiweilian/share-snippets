@@ -10,8 +10,8 @@ const getScroll = () => {
     top = window.pageYOffset
     left = window.pageXOffset
   } else {
-    top = document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop
-    left = document.documentElement.clientHeight ? document.documentElement.scrollLeft : document.body.scrollLeft
+    top = document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop
+    left = document.documentElement ? document.documentElement.scrollLeft : document.body.scrollLeft
   }
 
   return {
