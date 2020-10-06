@@ -2,7 +2,7 @@
  * 获取 window 滚动量
  * @return {Object}
  */
-const scroll = () => {
+const getScroll = () => {
   let top = 0
   let left = 0
 
@@ -20,4 +20,4 @@ const scroll = () => {
   }
 }
 
-export default scroll
+export default getScroll

@@ -3,7 +3,7 @@
  * @param  {HTMLElement} ele
  * @return {Object}
  */
-const offset = (ele) => {
+const getOffset = (ele) => {
   let top = ele.offsetTop
   let left = ele.offsetLeft
   let parent = ele.offsetParent
@@ -20,4 +20,4 @@ const offset = (ele) => {
   }
 }
 
-export default offset
+export default getOffset
