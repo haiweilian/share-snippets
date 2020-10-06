@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/haiweilian/share-snippets/compare/v1.2.0...v1.3.0) (2020-10-06)
+
+
+### Features
+
+* **js:** rename offset scroll ([0fd949b](https://github.com/haiweilian/share-snippets/commit/0fd949b9f3d3a55e1ab72c116b36177ab003ccfa))
+
 ## [1.2.0](https://github.com/haiweilian/share-snippets/compare/v1.1.0...v1.2.0) (2020-10-01)
 
 
