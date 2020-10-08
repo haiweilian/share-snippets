@@ -1,6 +1,5 @@
 const { series, src, dest, watch } = require('gulp')
 const sass = require('gulp-sass')
-sass.compiler = require('node-sass')
 
 function scssTask() {
   return src('./scss/*.scss')
